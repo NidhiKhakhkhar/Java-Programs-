@@ -7,7 +7,7 @@ public class ElectricityBill {
         if(unit <= 200){
             amount += unit*0.8;
         }
-        else if(unit <= 300){
+        else if(unit > 200 && unit <= 300){
             amount += (200*0.8) + ((unit - 200)*0.9);
         }
         else{
